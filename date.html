@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Date</title>
+</head>
+<body align="center">
+  <h1>Display Date</h1>
+  <input type="text" id="dateInput" aria-label="input">
+  <button type="button" onclick="displayDate()">isplay Date</button>
+  <button type="button" onclick="alert(Date())">Alert</button>
+  <p id="date"></p>
+  <script>
+    function displayDate() {
+      var date = new Date();
+      document.getElementById("dateInput").value = date;
+      document.getElementById("date").innerHTML = date;
+    }
+  </script>
+</body>
+</html>
